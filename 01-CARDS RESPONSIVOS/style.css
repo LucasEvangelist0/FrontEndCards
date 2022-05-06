@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000000;
+    height: 100%; /* vh = Altura da tela que está sendo utilizada (responsiva). */
+    width: 100%; /* % = Largura da tela responsiva  */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+    align-items: center; /* Centraliza o conteúdo na vertical */
+    color: #ffffff;
+}
+
+main.cards {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+
+section.card:hover {
+    transform: translateY(-2px);
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1B263B;
+    padding: 32px 16px;
+    border-radius: 15px;
+    max-height: 256px;
+    margin-left: 32px;
+    
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0px;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0; /* Define o tamanho da borda */
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+main.cards section.card button:hover {
+    background-color: #0c0f0a;
+}
+   
+main.cards section.card:hover {
+    box-shadow: 2px 20px 50px -30px #ffc1d5;
+}
